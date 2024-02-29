@@ -15,7 +15,7 @@ spec:
         app: argocd-test-app
     spec:
       containers:
-      - image: qaxim/hello-argo:v2
+      - image: qaxim/hello-argo:v3
         name: hello-argo
 ---
 apiVersion: v1
