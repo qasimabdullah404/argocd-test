@@ -15,7 +15,7 @@ spec:
         app: argocd-test-app
     spec:
       containers:
-      - image: qaxim/hello-argo:v1
+      - image: qaxim/hello-argo:v3
         name: hello-argo
 ---
 apiVersion: v1
@@ -23,6 +23,7 @@ kind: Service
 metadata:
   name: argocd-test-app-svc
 spec:
+  type: NodePort
   selector:
     app: argocd-test-app
   ports:
